@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="denemeDataSet" targetNamespace="http://tempuri.org/denemeDataSet.xsd" xmlns:mstns="http://tempuri.org/denemeDataSet.xsd" xmlns="http://tempuri.org/denemeDataSet.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections>
+          <Connection AppSettingsObjectName="Settings" AppSettingsPropertyName="denemeConnectionString" ConnectionStringObject="" IsAppSettingsProperty="true" Modifier="Assembly" Name="denemeConnectionString (Settings)" ParameterPrefix="@" PropertyReference="ApplicationSettings.BİLGİSAYAR_SATIS_OTOMASYONU.Properties.Settings.GlobalReference.Default.denemeConnectionString" Provider="System.Data.SqlClient" />
+        </Connections>
+        <Tables>
+          <TableAdapter BaseClass="System.ComponentModel.Component" DataAccessorModifier="AutoLayout, AnsiClass, Class, Public" DataAccessorName="tbl_birlesimTableAdapter" GeneratorDataComponentClassName="tbl_birlesimTableAdapter" Name="tbl_birlesim" UserDataComponentName="tbl_birlesimTableAdapter">
+            <MainSource>
+              <DbSource ConnectionRef="denemeConnectionString (Settings)" DbObjectType="Unknown" FillMethodModifier="Public" FillMethodName="Fill" GenerateMethods="Both" GenerateShortCommands="false" GeneratorGetMethodName="GetData" GeneratorSourceName="Fill" GetMethodModifier="Public" GetMethodName="GetData" QueryType="Rowset" ScalarCallRetval="System.Object, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" UseOptimisticConcurrency="true" UserGetMethodName="GetData" UserSourceName="Fill">
+                <SelectCommand>
+                  <DbCommand CommandType="Text" ModifiedByUser="true">
+                    <CommandText>select tbl_islemler.*, tbl_sparisler.* from tbl_islemler INNER JOIN tbl_sparisler ON tbl_islemler.ÜrünKodu = tbl_sparisler.Siparisi</CommandText>
+                    <Parameters />
+                  </DbCommand>
+                </SelectCommand>
+              </DbSource>
+            </MainSource>
+            <Mappings>
+              <Mapping SourceColumn="ÜrünId" DataSetColumn="ÜrünId" />
+              <Mapping SourceColumn="ÜrünAdı" DataSetColumn="ÜrünAdı" />
+              <Mapping SourceColumn="ÜrünKodu" DataSetColumn="ÜrünKodu" />
+              <Mapping SourceColumn="ÜrünFiyatı" DataSetColumn="ÜrünFiyatı" />
+              <Mapping SourceColumn="ÜrünAdeti" DataSetColumn="ÜrünAdeti" />
+              <Mapping SourceColumn="ÜrünMarkası" DataSetColumn="ÜrünMarkası" />
+              <Mapping SourceColumn="ÜrünTürü" DataSetColumn="ÜrünTürü" />
+              <Mapping SourceColumn="ÜrrünResmi" DataSetColumn="ÜrrünResmi" />
+              <Mapping SourceColumn="MüsteriID" DataSetColumn="MüsteriID" />
+              <Mapping SourceColumn="MüsteriAdi" DataSetColumn="MüsteriAdi" />
+              <Mapping SourceColumn="MüsteriSoyadi" DataSetColumn="MüsteriSoyadi" />
+              <Mapping SourceColumn="MüsteriAdresi" DataSetColumn="MüsteriAdresi" />
+              <Mapping SourceColumn="TelefonNO" DataSetColumn="TelefonNO" />
+              <Mapping SourceColumn="Siparisi" DataSetColumn="Siparisi" />
+              <Mapping SourceColumn="SiparisTarihi" DataSetColumn="SiparisTarihi" />
+              <Mapping SourceColumn="SiparisAdeti" DataSetColumn="SiparisAdeti" />
+              <Mapping SourceColumn="SiparisTutarı" DataSetColumn="SiparisTutarı" />
+            </Mappings>
+            <Sources />
+          </TableAdapter>
+        </Tables>
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="denemeDataSet" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="True" msprop:Generator_DataSetName="denemeDataSet" msprop:Generator_UserDSName="denemeDataSet">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="tbl_birlesim" msprop:Generator_TableClassName="tbl_birlesimDataTable" msprop:Generator_TableVarName="tabletbl_birlesim" msprop:Generator_TablePropName="tbl_birlesim" msprop:Generator_RowDeletingName="tbl_birlesimRowDeleting" msprop:Generator_RowChangingName="tbl_birlesimRowChanging" msprop:Generator_RowEvHandlerName="tbl_birlesimRowChangeEventHandler" msprop:Generator_RowDeletedName="tbl_birlesimRowDeleted" msprop:Generator_UserTableName="tbl_birlesim" msprop:Generator_RowChangedName="tbl_birlesimRowChanged" msprop:Generator_RowEvArgName="tbl_birlesimRowChangeEvent" msprop:Generator_RowClassName="tbl_birlesimRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="ÜrünId" msdata:ReadOnly="true" msprop:Generator_ColumnVarNameInTable="columnÜrünId" msprop:Generator_ColumnPropNameInRow="ÜrünId" msprop:Generator_ColumnPropNameInTable="ÜrünIdColumn" msprop:Generator_UserColumnName="ÜrünId" type="xs:unsignedByte" />
+              <xs:element name="ÜrünAdı" msprop:Generator_ColumnVarNameInTable="columnÜrünAdı" msprop:Generator_ColumnPropNameInRow="ÜrünAdı" msprop:Generator_ColumnPropNameInTable="ÜrünAdıColumn" msprop:Generator_UserColumnName="ÜrünAdı">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrünKodu" msprop:Generator_ColumnVarNameInTable="columnÜrünKodu" msprop:Generator_ColumnPropNameInRow="ÜrünKodu" msprop:Generator_ColumnPropNameInTable="ÜrünKoduColumn" msprop:Generator_UserColumnName="ÜrünKodu">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrünFiyatı" msprop:Generator_ColumnVarNameInTable="columnÜrünFiyatı" msprop:Generator_ColumnPropNameInRow="ÜrünFiyatı" msprop:Generator_ColumnPropNameInTable="ÜrünFiyatıColumn" msprop:Generator_UserColumnName="ÜrünFiyatı">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrünAdeti" msprop:Generator_ColumnVarNameInTable="columnÜrünAdeti" msprop:Generator_ColumnPropNameInRow="ÜrünAdeti" msprop:Generator_ColumnPropNameInTable="ÜrünAdetiColumn" msprop:Generator_UserColumnName="ÜrünAdeti">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrünMarkası" msprop:Generator_ColumnVarNameInTable="columnÜrünMarkası" msprop:Generator_ColumnPropNameInRow="ÜrünMarkası" msprop:Generator_ColumnPropNameInTable="ÜrünMarkasıColumn" msprop:Generator_UserColumnName="ÜrünMarkası">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrünTürü" msprop:Generator_ColumnVarNameInTable="columnÜrünTürü" msprop:Generator_ColumnPropNameInRow="ÜrünTürü" msprop:Generator_ColumnPropNameInTable="ÜrünTürüColumn" msprop:Generator_UserColumnName="ÜrünTürü" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="ÜrrünResmi" msprop:Generator_ColumnVarNameInTable="columnÜrrünResmi" msprop:Generator_ColumnPropNameInRow="ÜrrünResmi" msprop:Generator_ColumnPropNameInTable="ÜrrünResmiColumn" msprop:Generator_UserColumnName="ÜrrünResmi">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MüsteriID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msdata:AutoIncrementSeed="-1" msdata:AutoIncrementStep="-1" msprop:Generator_ColumnVarNameInTable="columnMüsteriID" msprop:Generator_ColumnPropNameInRow="MüsteriID" msprop:Generator_ColumnPropNameInTable="MüsteriIDColumn" msprop:Generator_UserColumnName="MüsteriID" type="xs:int" />
+              <xs:element name="MüsteriAdi" msprop:Generator_ColumnVarNameInTable="columnMüsteriAdi" msprop:Generator_ColumnPropNameInRow="MüsteriAdi" msprop:Generator_ColumnPropNameInTable="MüsteriAdiColumn" msprop:Generator_UserColumnName="MüsteriAdi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MüsteriSoyadi" msprop:Generator_ColumnVarNameInTable="columnMüsteriSoyadi" msprop:Generator_ColumnPropNameInRow="MüsteriSoyadi" msprop:Generator_ColumnPropNameInTable="MüsteriSoyadiColumn" msprop:Generator_UserColumnName="MüsteriSoyadi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="MüsteriAdresi" msprop:Generator_ColumnVarNameInTable="columnMüsteriAdresi" msprop:Generator_ColumnPropNameInRow="MüsteriAdresi" msprop:Generator_ColumnPropNameInTable="MüsteriAdresiColumn" msprop:Generator_UserColumnName="MüsteriAdresi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="TelefonNO" msprop:Generator_ColumnVarNameInTable="columnTelefonNO" msprop:Generator_ColumnPropNameInRow="TelefonNO" msprop:Generator_ColumnPropNameInTable="TelefonNOColumn" msprop:Generator_UserColumnName="TelefonNO" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="Siparisi" msprop:Generator_ColumnVarNameInTable="columnSiparisi" msprop:Generator_ColumnPropNameInRow="Siparisi" msprop:Generator_ColumnPropNameInTable="SiparisiColumn" msprop:Generator_UserColumnName="Siparisi" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="2147483647" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+              <xs:element name="SiparisTarihi" msprop:Generator_ColumnVarNameInTable="columnSiparisTarihi" msprop:Generator_ColumnPropNameInRow="SiparisTarihi" msprop:Generator_ColumnPropNameInTable="SiparisTarihiColumn" msprop:Generator_UserColumnName="SiparisTarihi" type="xs:dateTime" minOccurs="0" />
+              <xs:element name="SiparisAdeti" msprop:Generator_ColumnVarNameInTable="columnSiparisAdeti" msprop:Generator_ColumnPropNameInRow="SiparisAdeti" msprop:Generator_ColumnPropNameInTable="SiparisAdetiColumn" msprop:Generator_UserColumnName="SiparisAdeti" type="xs:int" minOccurs="0" />
+              <xs:element name="SiparisTutarı" msprop:Generator_ColumnVarNameInTable="columnSiparisTutarı" msprop:Generator_ColumnPropNameInRow="SiparisTutarı" msprop:Generator_ColumnPropNameInTable="SiparisTutarıColumn" msprop:Generator_UserColumnName="SiparisTutarı" minOccurs="0">
+                <xs:simpleType>
+                  <xs:restriction base="xs:string">
+                    <xs:maxLength value="50" />
+                  </xs:restriction>
+                </xs:simpleType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+    <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+      <xs:selector xpath=".//mstns:tbl_birlesim" />
+      <xs:field xpath="mstns:ÜrünId" />
+    </xs:unique>
+  </xs:element>
+</xs:schema>
